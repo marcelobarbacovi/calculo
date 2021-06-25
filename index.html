@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            border: black 2px solid;
+            width: 200px;
+            height: 15px;
+            text-align: left;
+            font-size: 20px;
+            background-color: white;
+            padding: 5px;
+        }
+        
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <label for="valor1">Digite o valor</label>
+    <input type="number;" id="1" ;>
+    <input type="number;" id="2">
+    <button onclick="evento();">+</button>
+    <button onclick="evento1();">-</button>
+    <button onclick="evento2();">*</button>
+    <button onclick="evento3();">/</button>
+    <h2>Resultado</h2>
+    <div id="minhadiv"></div>
+
+</body>
+<script>
+    function evento() {
+        var v1 = document.getElementById("1").value
+        var v2 = document.getElementById("2").value
+        var resultado = (Number(v1) + Number(v2));
+        var minhadiv = document.getElementById("minhadiv").innerHTML = resultado;
+
+    }
+
+    function evento1() {
+        var v1 = document.getElementById("1").value
+        var v2 = document.getElementById("2").value
+        var resultado = (Number(v1) - Number(v2));
+        var minhadiv = document.getElementById("minhadiv").innerHTML = resultado;
+    }
+
+    function evento2() {
+        var v1 = document.getElementById("1").value
+        var v2 = document.getElementById("2").value
+        var resultado = (Number(v1) * Number(v2));
+        var minhadiv = document.getElementById("minhadiv").innerHTML = resultado;
+    }
+
+    function evento3() {
+        var v1 = document.getElementById("1").value
+        var v2 = document.getElementById("2").value
+        var resultado = (Number(v1) / Number(v2));
+        var minhadiv = document.getElementById("minhadiv").innerHTML = resultado;
+    }
+</script>
+
+
+
+
+</script>
+
+</html>
